@@ -221,7 +221,23 @@ header ul li .active {
 .contactBox h2 {
     font-size: 2em;
     color: white;
-    text-align: center;
+    margin-left: 39%;
+}
+
+.underLine {
+
+}
+
+.underLine:after {
+    content: "";
+    width:200px;
+    height:5px;
+    top:10px;
+    background: white;
+    z-index: 100;
+    position: absolute;
+    border-radius:5px ;
+    border: 2px solid red;
 }
 
 .input-box input, .input-box2 input, .input-box3 input {
