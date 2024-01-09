@@ -247,6 +247,10 @@ header ul li .active {
     transition: .5s ease;
 }
 
+.whiteText { 
+    color: white;
+}
+
 .input-box input:focus,
 .input-box2 input:focus,
 .input-box3 input:focus
