@@ -96,6 +96,7 @@ header ul li .active {
     top:5vh;
 }
 
+
 .parallax img#mainComputer {
     z-index:2;
     left:28%;
@@ -128,8 +129,21 @@ header ul li .active {
     z-index:10;
 }
 
+.reviewTX {
+    text-align: center;
+    color: white;
+}
+
+.blackTX {
+    color:black;
+}
+
 .firebrick {
     background: firebrick;
+}
+
+.whiteText { 
+    color: white;
 }
 
 .black {
@@ -142,11 +156,41 @@ header ul li .active {
     color: #FFF;
 }
 
-.sec p {
+.right {
+    margin-left: 70vh;
+    font-size: 15px;
     font-size: 1em;
     color: #FFF;
 }
 
+
+.hiringIMG {
+    position: absolute;
+    width: 470px;
+    border-radius: 20px;
+    border: 2px solid white;
+    left: 6%;
+}
+
+.exploreBTN {
+    text-decoration: none;
+    padding: 20px 55px;
+    background-color: #FE6124;
+    color: white;
+    border-radius: 30px;
+    margin-left: 30vh;
+}
+
+.exploreBTN:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    transition: all 0.2s ease-out;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr;
+}
 
 .wave {
     position: absolute;
@@ -157,6 +201,16 @@ header ul li .active {
     line-height: 0;
     fill: firebrick;
     background: black;
+}
+
+.wave2 {
+    position: absolute;
+    top: -1%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background: firebrick;
 }
 
 .wave svg {
