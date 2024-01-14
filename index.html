@@ -9,6 +9,7 @@
         <script type="text/javascript" src="script.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -69,56 +70,71 @@
         </div>
         <div class="sec black">
             <section>
-                <h1 class="reviewTX">Reviews</h1>
+                <h1 class="reviewTX">Reviews
+                    <i class="material-icons reviewIcon" style="font-size:48px;">rate_review</i>
+                </h1>
 
                 <div class="container mt-5">
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="container mt-3">
-                                <div class="card card2">
-                                <div class="card-body">
-                                    <h4 class="card-title">"I recently joined the company and ever since have never regretted the decsision. The work enviroment is great as people are constantly encouraging and complimenting your work. And you can always reach out for help and never be judge."</h4>
-                                    <br><br>
-                                    <p class="card-text blackTX">
-                                    - Maddison Lin
-                                    </p>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-full"></i>
-                                </div>
+                                <div class="card card2 reviewHover">
+                                    <div class="card-body">
+                                        <h4 class="card-title">"I recently joined the company and ever since have never regretted the decsision. The work enviroment is great as people are constantly encouraging and complimenting your work. And you can always reach out for help and never be judge."</h4>
+                                        <br><br>
+                                        <p class="card-text">
+                                        - Maddison Lin
+                                        </p>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-full"></i>
+                                    </div>
                                 </div>
                             </div>
                     
                         </div>
                         <div class="col-sm-4">
                             <div class="container mt-3">
-                                <div class="card card2">
-                                <div class="card-body">
-                                    <h4 class="card-title">fill in</h4>
-                                    <br><br>
-                                    <p class="card-text">
-                                        fill in
-                                    </p>
-                                </div>
+                                <div class="card card2 reviewHover">
+                                    <div class="card-body">
+                                        <h4 class="card-title">"My experience at this company has been nothing short of exceptional. From the moment I joined, I felt welcomed and supported by both my colleagues and superiors. The work environment is incredibly positive; everyone is uplifting and genuinely interested in your growth. Whenever I need assistance, there's always someone willing to lend a hand without any judgment. I'm grateful to be part of such a nurturing and encouraging team."</h4>
+                                        <br><br>
+                                        <p class="card-text">
+                                            - Daniel Smith
+                                        </p>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="container mt-3">
-                                <div class="card card2">
+                                <div class="card card2 reviewHover">
                                 <div class="card-body">
-                                    <h4 class="card-title">fill in</h4>
-                                    <p class="card-text">
-                                        fill in
-                                    </p>
+                                        <h4 class="card-title">"Joining this company was a game-changer for me. The work atmosphere is simply amazing. I've never encountered a place where people are so appreciative and complimentary of each other's efforts. It's refreshing to be surrounded by individuals who genuinely want to see you succeed. No matter how challenging the task may seem, there's always a support system in place. I can confidently say that I've found my professional family here, where assistance is always just a step away. This is the kind of workplace every employee dreams of being a part of."</h4>
+                                        <p class="card-text">
+                                            - Jame Anderson
+                                        </p>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
                                 </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <br><br><br>
+                <a href="#" class="learnBTN">Learn More</a>
 
                   
             </section>
@@ -127,8 +143,27 @@
         </div>
         <div class="sec firebrick">
             <br><br><br><br>
-            <section>
-                <h2>Who we are and what we do</h2>
+            <section class="col-md-10 offset-md-1">
+                <div class="container mt-5">
+                    <h1 class="reviewTX">Employee Benefits</h1>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img class="hiringIMG" src="benefitsIMG.png" alt="Benefits">
+                        </div>
+
+                        <div class="col-sm-7 sizeTX">
+                            <p>                    
+                                Elevate your career with us! We care about your well-being and offer an 
+                                excellent benefits package.<br><br> Enjoy top-notch health and dental insurance, 
+                                generous vacation time, and secure your future with our comprehensive retirement 
+                                benefits.<br><br> Join us for a fulfilling work experience where your health, happiness, and 
+                                future are our priorities!
+                            </p>
+                            <br><br>
+                    </div>
+                </div>                
+                <!-- <h2>Who we are and what we do</h2>
+
                 
                 <ul class="whiteText">
                     <li><strong>Innovative Work Environment:</strong> At CYBERWARE, our culture is centered around innovation, providing a dynamic and stimulating workplace where cutting-edge technology meets cybersecurity solutions.</li>
@@ -146,8 +181,8 @@
                     <li><strong>Ongoing Training Opportunities:</strong> Stay ahead in the fast-paced world of cybersecurity with access to continuous training programs and workshops, keeping your skills sharp and up-to-date.</li>
                     <br><br>
                     <li><strong>Shape the Future of Security:</strong> Be part of a company that is not just securing the present but actively shaping the future of digital security. Join CYBERWARE and contribute to the forefront of cybersecurity advancements.</li>
-                </ul>
-
+                </ul> -->
+               
                 <div class="wave2">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
@@ -159,7 +194,9 @@
 
         </div>
 
-
+        <footer>
+            
+        </footer>
 
 
     </body>
