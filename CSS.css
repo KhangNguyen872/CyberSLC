@@ -444,7 +444,7 @@ footer {
 footer:before {
     content: "";
     position:absolute;
-    top: 665vh;
+    top: 764vh;
     bottom: 0;
     left:-0%;
     width: 100%;
