@@ -1,0 +1,54 @@
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 30%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  height:8%;
+  position: absolute;
+  left: 12%;
+  top:40%;
+  z-index: 1000;
+}
+
+#myTable {
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    background-color: white;
+    position: absolute;
+    top:50%;
+    left:12%;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.JobH1 {
+    color:white;
+    font-size: 70px;
+    position: absolute;
+    top:20%;
+    left:35%;
+    z-index: 100000000;
+}
