@@ -24,6 +24,10 @@ header {
     z-index: 500;
 }
 
+.blurBG {
+    backdrop-filter: blur(6px);
+}
+
 header .logo {  
     border-radius:20px;
     width: 300px;

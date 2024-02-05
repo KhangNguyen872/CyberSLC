@@ -3,32 +3,43 @@
   box-sizing: border-box;
 }
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
+.sortCenter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: 30vh;
+}
+
+
 #myInput {
   background-image: url('/css/searchicon.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
-  width: 30%;
+  width: auto;
+  min-width: 350px;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
   border-radius: 20px;
-  height:8%;
-  position: absolute;
-  left: 12%;
-  top:40%;
-  z-index: 1000;
 }
 
 #myTable {
-    border-collapse: collapse;
-    width: 80%;
-    border: 1px solid #ddd;
-    font-size: 18px;
-    background-color: white;
-    position: absolute;
-    top:50%;
-    left:12%;
+  border-collapse: collapse;
+  width: 80%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  background-color: white;
 }
 
 #myTable th, #myTable td {
@@ -45,10 +56,53 @@
 }
 
 .JobH1 {
-    color:white;
-    font-size: 70px;
-    position: absolute;
-    top:20%;
-    left:35%;
-    z-index: 100000000;
+  color: white;
+  font-size: 70px;
+}
+
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.dropdownTx {
+  font-size:25px;
+  color:white;
+  margin-left:25vh;
+  margin-top:6px;
 }
