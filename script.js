@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function myFunction() {
+function searchBar() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
@@ -35,7 +35,7 @@ function myFunction() {
     }
 }
 
-function myFunction() {
+function dropbtn() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
@@ -50,4 +50,35 @@ window.onclick = function(event) {
       }
     }
   }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  filterSelection("all");
+});
+
+function filterSelection(c) {
+  var rows = document.querySelectorAll("#myTable tr.filterRow");
+
+  rows.forEach(function(row) {
+      if (c === "all" || row.classList.contains(c)) {
+          row.style.display = "";
+      } else {
+          row.style.display = "none";
+      }
+  });
+}
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByTagName("button");
+
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+      var current = btnContainer.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+
+      var country = this.textContent.trim();
+      filterSelection(country);
+  });
 }

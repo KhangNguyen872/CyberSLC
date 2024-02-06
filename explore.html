@@ -7,13 +7,12 @@
         <title>SLC</title>
         <link rel="stylesheet" type="text/css" href="CSS.css">
         <script type="text/javascript" src="script.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="CSS3.css">
     </head>
     <body>
-        <header class="blurBG">
+        <header>
             <a href="#" >
                 <img class="logo" src="logo.png">
             </a>
@@ -29,85 +28,86 @@
             <h1 class="JobH1">Jobs Listing</h1>
             <br><br><br><br>
             <div class="sortCenter">
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for job titles...." title="Searchbar">
+                <input type="text" id="myInput" onkeyup="searchBar()" placeholder="Search for job titles...." title="Searchbar">
                 <p class="dropdownTx">Sort by Country:</p>
                 <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                    <button onclick="dropbtn()" class="dropbtn">
+                        <i class="fa fa-angle-double-down" style="font-size:20px; width:30px;"></i>
+                    </button>
                     <div id="myDropdown" class="dropdown-content">
-                        <a href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#contact">Contact</a>
+                        <div id="myBtnContainer">
+                            <button onclick="filterSelection('all')"> Show all</button>
+                            <button onclick="filterSelection('US')"> US</button>
+                            <button onclick="filterSelection('UK')"> UK</button>
+                            <button onclick="filterSelection('Germany')"> Germany</button>
+                            <button onclick="filterSelection('Japan')"> Japan</button>
+                            <button onclick="filterSelection('Nigeria')"> Nigeria</button>
+                            <button onclick="filterSelection('France')"> France</button>
+                            <button onclick="filterSelection('Canada')"> Canada</button>
+                            <button onclick="filterSelection('Indonesia')"> Indonesia</button>
+                        </div>
                     </div>
                 </div>
+
             </div>
             <br>
             <table id="myTable">
             <tr class="header">
                 <th style="width:20%;">Job Listing</th>
-                <th style="width:20%">Openings</th>
                 <th style="width:20%;">Salary</th>
                 <th style="width:20%">Location</th>
             </tr>
-            <tr>
+            <tr class="filterRow UK">
                 <td>Information Security Analyst</td>
-                <td>73 positions available</td>
                 <td>$103,590</td>
                 <td>London, UK</td>
-            </tr>
-            <tr>
+            </tr>                
+            <tr class="filterRow US">
                 <td>Security Specialist</td>
-                <td>34 positions available</td>
                 <td>$99,652</td>
                 <td>New York City, United States</td>
-            </tr>
-            <tr>
+            </tr>            
+            <tr class="filterRow France">
                 <td>Cybersecurity Analyst</td>
-                <td>9 positions available</td>
                 <td>$100,603</td>
                 <td>Paris, France</td>
             </tr>
-            <tr>
+            <tr class="filterRow US">
                 <td>Application Security Engineer</td>
-                <td>45 positions available</td>
                 <td>$111,938</td>
                 <td>Atlanta, United States</td>
             </tr>
-            <tr>
+            <tr class="filterRow UK">
                 <td>Network Security Engineer</td>
-                <td>3 positions available</td>
                 <td>$113,918</td>
                 <td>Manchester, UK</td>
             </tr>
-            <tr>
+            <tr class="filterRow Germany">
                 <td>Security Architect</td>
-                <td>8 positions available</td>
                 <td>$146,144</td>
                 <td>Hamburg, Germany</td>
             </tr>
-            <tr>
+            <tr class="filterRow Nigeria">
                 <td>Digital Forensic Investigator</td>
-                <td>12 positions available</td>
                 <td>$77,488</td>
                 <td>Lagos, Nigeria</td>
             </tr>
-            <tr>
+            <tr class="filterRow Canada">
                 <td>Security Systems Administrator</td>
-                <td>10 positions available</td>
                 <td>$81,230</td>
                 <td>Montreal, Canada</td>
             </tr>
-            <tr>
+            <tr class="filterRow Indonesia">
                 <td>Data Privacy Officer</td>
-                <td>14 positions available</td>
                 <td>$101,230</td>
                 <td>Jakarta, Indonesia</td>
             </tr>
-            <tr>
+            <tr class="filterRow Japan">
                 <td>Artificial Intelligence Security Specialist</td>
-                <td>23 positions available</td>
                 <td>$151,210</td>
                 <td>Tokyo, Japan</td>
-            </tr>
+            </tr>        
+
             </table>
         </div>
 

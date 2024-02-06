@@ -1,11 +1,12 @@
+/* Setting basic property to all elements/objects unless a class/id change it. */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Figtree', sans-serif;
 }
 
+/* Setting property to the body tag. Creating a bg linearGradient that hide any overflow. */
 body {
     overflow-x: hidden;
     min-height: 100vh;
@@ -13,6 +14,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/* Creating a header tag that allow setsup the navigation bar by seting property to in to get it in place. */
 header {
     position: absolute;
     top:0;
@@ -25,26 +27,26 @@ header {
     z-index: 500;
 }
 
-.blurBG {
-    backdrop-filter: blur(6px);
-}
-
+/* Setting property to element under the class logo inside the header tag, creating a smooth border. */
 header .logo {  
     border-radius:20px;
     width: 300px;
 }
 
+/* Centering all ul listing under the header tag. */
 header ul {
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Adjusting all li insde an header tag to have a list style of none and to be move the left. */
 header ul li {
     list-style:none;
     margin-left: 2%;
 }
 
+/* Setting all links/a tags inside a li tag wihtin a header tag to a certain property. */
 header ul li a {
     text-decoration: none;
     padding: 6px 15px;
@@ -52,12 +54,15 @@ header ul li a {
     border-radius: 20px;
 }
 
+/* Creating a hover class for a tags inside header tags. And a active li for the navigation. */
 header ul li a:hover,
 header ul li .active {
     background: #fff;
     color: #BF273D;
     transition: all 0.2s ease-in;
 }
+
+/* Creating a class name parallax that is the main attraction for the index. Center everything inside the tag, and sets width 100% and everything overflow to be hidden. */
 .parallax {
     position: relative;
     width: 100%;
@@ -70,6 +75,7 @@ header ul li .active {
     overflow-y: hidden;
 }
 
+/* Creating a before element for my parallax class, this is to smoothen out between the transition from the parallax to the actual webage. */
 .parallax::before {
     content: "";
     position: absolute;
@@ -80,13 +86,14 @@ header ul li .active {
     z-index: 10;
 }
 
-
+/* Creating a class to assign to header text for section within thee webpage. */
 .abtHeader {
     color:white;
     text-align: center;
     font-size:60px;
 }
 
+/* Adjusting all image wrapped in the parallax class, assiging basic property unless overwritten by a more specific class. */
 .parallax img {
     position: absolute ;
     object-fit: cover;
@@ -94,6 +101,7 @@ header ul li .active {
     left:0;
 }
 
+/* Creating a id assign to the image forest inside the parallax. Assigning the image certain property to put it into places. */
 .parallax img#forest {
     z-index:3;
     width: 100.5%;
@@ -102,13 +110,14 @@ header ul li .active {
     height:30%;
 }
 
+/* Creating a id assign to the image cloud inside the parallax. Assigning the image certain property to put it into places. */
 .parallax img#cloud {
     z-index:1;
     width:100%;
     top:5vh;
 }
 
-
+/* Creating a id assign to the image computer inside the parallax. Assigning the image certain property to put it into places. */
 .parallax img#mainComputer {
     z-index:2;
     left:28%;
@@ -116,12 +125,13 @@ header ul li .active {
     padding: 30px 30px;
 }
 
+/* Creating a id assign to the image sky inside the parallax. Assigning the image certain property to put it into places. */
 .parallax img#sky {
     width:100%;
     height: 100%;
 }
 
-
+/* Creating an id for the main text inside the parallax with a text shadow to help distinguish the text from background. */
 #headText {
     z-index: 2;
     top: 69vh;
@@ -135,19 +145,21 @@ header ul li .active {
     0 0 0.25em #fff ;
 }
 
+/* Creating a class that set basic property to each section inside the webpage. */
 .sec {
     position: relative;
     padding: 100px;
     z-index:10;
 }
 
-
+/* A class that changes the size of the text depending on what the webpage needs. */
 .sizeTX {
     font-size:25px;
     margin-left: 70vh;
     color: white;
 }
 
+/* Creating a specific class for a set of text within the webpage, assigning certain properties such centering the text, color change, padding, font-size. */
 .reviewTX {
     text-align: center;
     color: white;
@@ -155,27 +167,33 @@ header ul li .active {
     padding:60px 50px;
 }
 
+/* Creating a reusable class that simply change text color if needed. */
 .blackTX {
     color:black;
 }
 
+/* Creating a reusable class that change the background color of certain section, helped by the sec class and the padding property. */
 .firebrick {
     background: firebrick;
 }
 
+/* Creating a reusable class that simply change text color if needed. */
 .whiteText { 
     color: white;
 }
 
+/* Creating a reusable class that change the background color of certain section, helped by the sec class and the padding property. */ 
 .black {
     background: black;
 }
 
+/* Creating a tag assign to all h2 inside the class sec, assigning it properties like font-size, margin, and color. */
 .sec h2 {
     font-size: 3.5em;
     margin-bottom: 5vh;
     color: #FFF;
 }
+
 
 .right {
     margin-left: 70vh;
