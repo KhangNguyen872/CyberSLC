@@ -110,6 +110,12 @@ header ul li .active {
     height:30%;
 }
 
+.resize{
+    width: 100px;
+    height: 100px;
+}
+
+
 /* Creating a id assign to the image cloud inside the parallax. Assigning the image certain property to put it into places. */
 .parallax img#cloud {
     z-index:1;
