@@ -1,58 +1,73 @@
+<!-- Identifies page type -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SLC</title>
-        <link rel="stylesheet" type="text/css" href="CSS.css">
-        <script type="text/javascript" src="script.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="CSS3.css">
-    </head>
-    <body>
-        <header>
-            <a href="#" >
-                <img class="logo" src="logo.png">
-            </a>
-            <ul>
-                <li><a  href="index.html">Home</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Review</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </header>
 
-        <div class="content-container">
-            <h1 class="JobH1">Jobs Listing</h1>
-            <br><br><br><br>
-            <div class="sortCenter">
-                <input type="text" id="myInput" onkeyup="searchBar()" placeholder="Search for job titles...." title="Searchbar">
-                <p class="dropdownTx">Sort by Country:</p>
-                <div class="dropdown">
-                    <button onclick="dropbtn()" class="dropbtn">
-                        <i class="fa fa-angle-double-down" style="font-size:20px; width:30px;"></i>
-                    </button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <div id="myBtnContainer">
-                            <button onclick="filterSelection('all')"> Show all</button>
-                            <button onclick="filterSelection('US')"> US</button>
-                            <button onclick="filterSelection('UK')"> UK</button>
-                            <button onclick="filterSelection('Germany')"> Germany</button>
-                            <button onclick="filterSelection('Japan')"> Japan</button>
-                            <button onclick="filterSelection('Nigeria')"> Nigeria</button>
-                            <button onclick="filterSelection('France')"> France</button>
-                            <button onclick="filterSelection('Canada')"> Canada</button>
-                            <button onclick="filterSelection('Indonesia')"> Indonesia</button>
-                        </div>
+<html>
+
+<head>
+
+    <!-- Sets title -->
+    <title>SLC</title>
+
+    <!-- Links needed files and components -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS3.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <header>
+        <a href="#">
+            <img class="logo" src="logo.png">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- List of available jobs -->
+    <div class="content-container">
+        <h1 class="JobH1">Jobs Listing</h1>
+        <br><br><br><br>
+        <div class="sortCenter">
+            <input type="text" id="myInput" onkeyup="searchBar()" placeholder="Search for job titles...."
+                title="Searchbar">
+
+            <!-- Droptown that shows available jobs based on country -->
+            <p class="dropdownTx">Sort by Country:</p>
+            <div class="dropdown">
+                <button onclick="dropbtn()" class="dropbtn">
+                    <i class="fa fa-angle-double-down" style="font-size:20px; width:30px;"></i>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div id="myBtnContainer">
+                        <button onclick="filterSelection('all')"> Show all</button>
+                        <button onclick="filterSelection('US')"> US</button>
+                        <button onclick="filterSelection('UK')"> UK</button>
+                        <button onclick="filterSelection('Germany')"> Germany</button>
+                        <button onclick="filterSelection('Japan')"> Japan</button>
+                        <button onclick="filterSelection('Nigeria')"> Nigeria</button>
+                        <button onclick="filterSelection('France')"> France</button>
+                        <button onclick="filterSelection('Canada')"> Canada</button>
+                        <button onclick="filterSelection('Indonesia')"> Indonesia</button>
                     </div>
                 </div>
-
             </div>
-            <br>
-            <table id="myTable">
+
+        </div>
+        <br>
+
+        <!-- Jobs and characteristics of each -->
+        <table id="myTable">
             <tr class="header">
                 <th style="width:20%;">Job Listing</th>
                 <th style="width:20%;">Salary</th>
@@ -62,12 +77,12 @@
                 <td>Information Security Analyst</td>
                 <td>$103,590</td>
                 <td>London, UK</td>
-            </tr>                
+            </tr>
             <tr class="filterRow US">
                 <td>Security Specialist</td>
                 <td>$99,652</td>
                 <td>New York City, United States</td>
-            </tr>            
+            </tr>
             <tr class="filterRow France">
                 <td>Cybersecurity Analyst</td>
                 <td>$100,603</td>
@@ -107,11 +122,11 @@
                 <td>Artificial Intelligence Security Specialist</td>
                 <td>$151,210</td>
                 <td>Tokyo, Japan</td>
-            </tr>        
+            </tr>
 
-            </table>
-        </div>
+        </table>
+    </div>
 
-    
-    </body>
+</body>
+
 </html>
