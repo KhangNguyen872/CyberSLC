@@ -429,6 +429,16 @@ div section h1 i {
     color: white;
 }
 
+.textarea textarea:focus~label,
+.textarea textarea:valid + label
+{
+        top: 1px;
+        font-size: .8em;
+        background: #E54A2D;
+        padding: 0 6px;
+        color: white;
+}
+
 .btn {
     position: relative;
     display: inline-block;
@@ -479,16 +489,6 @@ div section h1 i {
 .textarea {
     border-radius: 40px;
 }
-
-.textarea textarea:focus~label
-    {
-        top: 1px;
-        font-size: .8em;
-        background: #E54A2D;
-        padding: 0 6px;
-        color: white;
-}
-
 
 footer {
     background: linear-gradient(to top, black 65%, white 100%);
