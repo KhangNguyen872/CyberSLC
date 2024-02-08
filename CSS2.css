@@ -1,3 +1,4 @@
+/* Global selector that applies property to all object, unless change by a more specific tag or class. */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,10 +6,7 @@
     font-family: 'Figtree', sans-serif;
 }
 
-body {
-    background-color: #eeeeea;
-}
-
+/* A wrapper that centers everything and change the proportion. */
 .wrapper {
     width: 100%;
     height: 100vh;
@@ -17,6 +15,7 @@ body {
     justify-content: center;
 }
 
+/* A container thats adjust the slide in the index page to be on the same row. */
 .container2 {
     height: 400px;
     display: flex;
@@ -24,6 +23,7 @@ body {
     justify-content: start;
 }
 
+/* A class that applies property to each card of the slide in the index. It creates a box shadow and border-radius. And among ther things. */
 .abtCard {
     width: 60px;
     background-size: cover;
@@ -36,6 +36,8 @@ body {
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
 }
 
+
+/* Target the element of the class row, which are children elements of the class abtCard. This simply position everything on the same row, and creating space above. */
 .abtCard > .row {
     color: white;
     display: flex;
@@ -43,6 +45,7 @@ body {
     margin-top:50%;
 }
 
+/* Creating element of the class icon which is the child elemnt of the row and abtCard. This class creates numbers circle for each card. */
 .abtCard > .row > .icon {
     background: #223;
     color: white;
@@ -55,6 +58,7 @@ body {
     margin: 15px;
 }
 
+/* Creating a general wrapper class for the text for specificer elements later. */
 .abtCard > .row > .description {
     display: flex;
     justify-content: center;
@@ -68,29 +72,35 @@ body {
     transition: all .3s ease;
 }
 
+/* Creating a tag for p tag inside of the class description. Change the text color and create space above. */
 .description p {
-    color: #b0b0ba;
+    color: white;
     padding-top: 5px;
 }
 
+/* Creating a tag for all h4 inside of the class .description. Change all text to uppercase and create space above. */
 .description h4 {
     text-transform: uppercase;
     padding-top: 15px;
 }
 
+/* a tag that set all input to have display none */
 input {
     display: none;
 }
 
+/* When the input list is selected/checked, apply this property. */
 input:checked + label {
     width: 600px;
 }
 
+/* When the input is checked, set description with these properties. */
 input:checked + label .description {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
 
+/* Assign background iamge to card with the class abtCard, and is seperated by assigned id. */
 .abtCard[for="c1"] {
     background-image: url('abtIMG1.png');
 }
