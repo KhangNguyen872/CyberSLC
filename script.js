@@ -72,6 +72,9 @@ function filterSelection(c) {
   var rows = document.querySelectorAll("#myTable tr.filterRow");
 
   rows.forEach(function(row) {
+      //Annif atatement that if category (c) equals to all or
+      //get set equal to a class in the html by function elementsGetter. 
+      //Toggle on and off for the row display.
       if (c === "all" || row.classList.contains(c)) {
           row.style.display = "";
       } else {
@@ -83,6 +86,7 @@ function filterSelection(c) {
 //Uses a click event listner that if a button within the dropdown or class myBtnContainer is clicked.
 // Then remove any pre-existing active class then reassign the active class to the clicked button.
 //Checks the content of button, like text. Trim any spaces. Then send it to filterSelection variable/parameter c.
+function elementGetter() {
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByTagName("button");
 
@@ -96,4 +100,5 @@ for (var i = 0; i < btns.length; i++) {
       var country = this.textContent.trim();
       filterSelection(c);
   });
+}
 }
