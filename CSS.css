@@ -413,14 +413,25 @@ div section h1 i {
     color: white;
 }
 
-.textarea textarea:focus + label,
-.textarea textarea:valid + label
-{
-        top: 1px;
-        font-size: .8em;
-        background: #E54A2D;
-        padding: 0 6px;
-        color: white;
+.input-wrap.textarea textarea:focus~label,
+.input-wrap.textarea textarea:valid~label {
+    top: 1px;
+    font-size: .8em;
+    background: #E54A2D;
+    padding: 0 6px;
+    color: white;
+}
+
+.input-wrap.textarea textarea:empty + label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: black;
+    pointer-events: none;
+    transition: .5s ease;
+    background-color: transparent;
 }
 
 .btn_slc {
