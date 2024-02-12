@@ -201,7 +201,7 @@ header ul li .active {
     color: #FFF;
 }
 
-
+/*An class shift object that hold this class to the right. Specifically for tx.*/
 .right {
     margin-left: 70vh;
     font-size: 1em;
@@ -209,12 +209,13 @@ header ul li .active {
     color: #FFF;
 }
 
+/*An tag that affect all h1 in side a div and section/. Changes text size and color.*/
 div section h1 i {
     color: white;
     font-size:48px;
 }
 
-
+/*An hover affect for the class reviewHover. Change the text color, background, and border. Use for a button.*/
 .reviewHover:hover {
     border:4px solid white;
     background-color: transparent;
@@ -222,6 +223,7 @@ div section h1 i {
     transition: all 0.5s ease-out;
 }
 
+/*A class for an IMG that simply change properties of the object.*/
 .hiringIMG {
     position: absolute;
     width: 470px;
@@ -230,6 +232,7 @@ div section h1 i {
     left: 6%;
 }
 
+/*Creating a button.*/
 .exploreBTN {
     text-decoration: none;
     padding: 20px 55px;
@@ -241,17 +244,20 @@ div section h1 i {
     margin-left: 30%;
 }
 
+/*Adding a hover effect for the button.*/
 .exploreBTN:hover {
     background-color: transparent;
     border: 2px solid white;
     transition: all 0.2s ease-out;
 }
 
+/*A class that creat4es column and sort all object assign to it.*/
 .grid {
     display: grid;
     grid-template-columns: 2fr;
 }
 
+/*A section of classes that fill and adjust the positioning of a curve wave.*/
 .wave {
     position: absolute;
     top: 71%;
@@ -294,6 +300,7 @@ div section h1 i {
     height: 305px;
 }
 
+/*A class that center everything wrapped in it.*/
 .contactForm {
     display: flex;
     justify-content: center;
@@ -301,11 +308,13 @@ div section h1 i {
     min-height: 100vh;
 }
 
+/*Adjusting position and width.*/
 .contactBox {
     position: relative;
     width: 400px;
 }
 
+/*Affecting th4e form tag inside the class contact box. Simply create a grid that sort everything inside the form.*/
 .contactBox form {
     width: 120%;
     padding: 20px 60px;
@@ -316,11 +325,13 @@ div section h1 i {
     row-gap: 2rem;
 }
 
+/*Make all objects that hold this class take up a whole row.*/
 .input-wrap.w1 {
     grid-column: span 2;
     width: 90%;
 }
 
+/*A class that adjust and create the box for the input.*/
 .contact-input {
     width: 120%;
     background-color: white;
@@ -335,23 +346,24 @@ div section h1 i {
     transition: 0.3s;
 }
 
+/*Hoveer affect.*/
 .contact-input:hover {
     background-color: lightgrey;
 }
 
-
+/*Changing the position of anything wrap around it.*/
 .input-wrap {
     position: relative;
 }
 
-
+/*Class that change text.*/
 .contactBox h2 {
     font-size: 2em;
     color: white;
     margin-left: 39%;
 }
 
-
+/*Creating a custom underline.*/
 .underLine {
     content: "";
     width:200px;
@@ -365,6 +377,7 @@ div section h1 i {
     left: 37%;
 }
 
+/*SECTION that focus on customizing input box, label, and adjusting foccus and valid.*/
 .input-box input, .input-box2 input, .input-box3 input {
     background: white;
     border: 2px solid white;
@@ -434,6 +447,7 @@ div section h1 i {
     background-color: transparent;
 }
 
+/*Creating a button*/
 .btn_slc {
     position: relative;
     display: inline-block;
@@ -452,6 +466,7 @@ div section h1 i {
     transition: color 1s, box-shadow 1s;
 }
 
+/*A before object that will have it width adjusted on hover to add a fill-in effect when hovering over the button.*/
 .btn_slc::before {
     content: "";
     position: absolute;
@@ -469,6 +484,7 @@ div section h1 i {
     width:100%;
 }
 
+/*A hover effect that creates a glow.*/
 .btn_slc:hover {
     transition-delay: 0s, 1s;
     color:white;
@@ -485,15 +501,18 @@ div section h1 i {
     border-radius: 40px;
 }
 
+/*Adjusting the spacing of the text for the popup.*/
 .popupBody {
     margin-top:4vh;
     margin-bottom: 2vh;
 }
 
+/*Adjusting spacing.*/
 .toast h7 {
     margin-right:34vh;
 }
 
+/*Adding volume to footer/*/
 footer {
     background: #212529;
     padding: 70px 70px;
