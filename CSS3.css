@@ -25,7 +25,7 @@
 
 /* Searchbar formatting */
 #myInput {
-  background-image: url('/css/searchicon.png');
+  background-image: url('searchIcon.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
   width: auto;
@@ -69,7 +69,7 @@
 }
 
 /* Country dropdown menu */
-.dropbtn1{
+.dropbtn1 {
   background-color: white;
   color: black;
   padding: 10px;
