@@ -1,75 +1,119 @@
-<!--Identifies file type-->
 <!DOCTYPE html>
 <html>
-    <!--Head section, conatctions all libaries, 
-    css bootsrap, js links. And connect then to the page-->
     <head>
         <title>Contact SLC</title>
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SLC</title>
+
+        <!-- Css and google fonts libaries. -->
         <link rel="stylesheet" type="text/css" href="CSS.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <!-- Google font libaries import. -->
         <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="script.js"></script>
+
+        
+        <!-- Bootstrap javascript and css libaries -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
 
-    <!--Body section, hold everything inside. Assigned the class contactForm-->
-    <body class="contactForm">
-        <!--Header tag, wraps around the navigation bar.-->
-        <header>
-            <a href="#" >
-                <img class="logo" src="logo.png">
-            </a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="explore.html">Explore</a></li>
-                <li><a href="#">Review</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </header>
+    <body>
+        <!-- Div class that has the class contact form, whcih creates the a grid, formatting the webpage. -->
+        <div class="contactForm">
+            <!--Header tag, wraps around the navigation bar.-->
+            <header>
+                <a href="#" >
+                    <img class="logo" src="logo.png">
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </header>
 
 
-        <!--Div tag with the class contactBox, set everything wrapped inside to an gridded formatt.-->
-        <div class="contactBox">
+            <!--Div tag with the class contactBox, set everything wrapped inside to an gridded formatt.-->
+            <div class="contactBox">
 
-            <!--Header tx, uses a span tag to create a custom underline.-->
-            <h2>Contact Us!</h2>
-            <span class="underLine"></span>
+                <!--Header tx, uses a span tag to create a custom underline.-->
+                <h2>Contact Us!</h2>
+                <span class="underLine"></span>
 
-            <!--Form tag, -->
-            <form action="index.html">
+                <!--Form tag, -->
+                <form action="index.html">
 
-                <!--Input wrapped in a div. This input ask for the user name.-->
-                <div class="input-wrap input-box w1">
-                    <input class="contact-input" autocompelte="off" name="First Name" type="text" required>
-                    <label>Name</label>
-                </div>
+                    <!--Input wrapped in a div. This input ask for the user name.-->
+                    <div class="input-wrap input-box w1">
+                        <input class="contact-input" autocompelte="off" name="First Name" type="text" required>
+                        <label>Name</label>
+                    </div>
 
-                <!--Section of input wrapped with classes that changes width,... -->
-                
-                <!--An input that is wrapped in a div. The input asks for the user enail.-->
-                <div class="input-wrap input-box2 w1">
-                    <input class="contact-input" autocompelte="off" name="Email" type="text" required>
-                    <label>Email</label>
-                </div>
+                    <!--Section of input wrapped with classes that changes width,... -->
+                    
+                    <!--An input that is wrapped in a div. The input asks for the user enail.-->
+                    <div class="input-wrap input-box2 w1">
+                        <input class="contact-input" autocompelte="off" name="Email" type="text" required>
+                        <label>Email</label>
+                    </div>
 
-                <!--An textarea wrapped in a div. Allow for the user to input their message. -->
-                <div class="input-wrap input-box3 textarea w1">
-                    <textarea name="Message" autocomplete="off" class="contact-input" requried> </textarea>
-                    <label>Message</label>
-                    <i class="fa-solid fa-message"></i>
-                </div>
-                
-                <!--A button with the type submit. That perform the action fo sending the user to index as assigned in the form tag.-->
-                <button type="submit" class="btn">Send</button>
+                    <!--An textarea wrapped in a div. Allow for the user to input their message. -->
+                    <div class="input-wrap input-box3 textarea w1">
+                        <textarea name="Message" autocomplete="off" class="contact-input" requried> </textarea>
+                        <label>Message</label>
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    
+                    <!--A button with the type submit. That perform the action fo sending the user to index as assigned in the form tag.-->
+                    <button type="submit" class="btn">Send</button>
 
 
-            </form>
+                </form>
 
+            </div>
         </div>
+        
+
+        <!-- Footer section that take use of the bootstap to create it. -->
+        <footer>
+            <div class="container-fluid p-5 text-white text-center">
+              <div class="container mt-3">    
+                <table class="table table-dark table-borderless">
+                  <thead>
+                    <tr>
+                      <th>HomePage</th>
+                      <th>Explore</th>
+                      <th>Contact</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a  class="footerfix" href="index.html">
+                          Home
+                        </a>
+                      </td>
+                      <td>
+                        <a class="footerfix" href="explore.html">
+                          Explore
+                        </a>
+                      </td>
+                      <td>
+                        <a class="footerfix" href="contact.html">
+                          Contact
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>  
+          </div>
+        </footer>
+
 
     </body>
 </html>
