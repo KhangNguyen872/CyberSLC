@@ -63,6 +63,10 @@ header ul li .active {
     transition: all 0.2s ease-in;
 }
 
+.review-text {
+    font-size: 15px;
+}
+
 /* Creating a class name parallax that is the main attraction for the index. Center everything inside the tag, and sets width 100% and everything overflow to be hidden. */
 .parallax {
     position: relative;
@@ -243,6 +247,16 @@ div section h1 i {
     border-radius: 30px;
     margin-left: 30%;
 }
+/*Creating a button.*/
+.jobBTN {
+    text-decoration: none;
+    padding: 4px 11px;
+    width:max-content;
+    overflow-x: hidden;
+    background-color: #FE6124;
+    color: white;
+    border-radius: 6px;
+}
 
 /*Adding a hover effect for the button.*/
 .exploreBTN:hover {
@@ -290,7 +304,16 @@ div section h1 i {
     fill: firebrick;
     background: black;
 }
-
+.wave4 {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    fill: black;
+    background: #F35728;
+}
 
 
 .wave svg {
@@ -314,7 +337,7 @@ div section h1 i {
     width: 400px;
 }
 
-/*Affecting th4e form tag inside the class contact box. Simply create a grid that sort everything inside the form.*/
+/*Affecting the form tag inside the class contact box. Simply create a grid that sort everything inside the form.*/
 .contactBox form {
     width: 120%;
     padding: 20px 60px;
@@ -505,11 +528,6 @@ div section h1 i {
 .popupBody {
     margin-top:4vh;
     margin-bottom: 2vh;
-}
-
-/*Adjusting spacing.*/
-.toast h7 {
-    margin-right:34vh;
 }
 
 /*Adding volume to footer/*/
